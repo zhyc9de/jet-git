@@ -38,10 +38,17 @@ JetBrains 风格的 Git 可视化工具 —— 在一个扩展中提供 Git Grap
 
 打开底部面板，切换到 **Git Brains** 标签页即可查看提交图、分支树和提交详情。
 
+![Git Graph](./images/git-graph.png)
+
 ### 合并编辑器
 
 1. 出现合并冲突时，点击 **源代码管理** 面板标题栏的合并图标打开 **冲突列表**。
+
+![冲突列表](./images/conflicts-list.png)
+
 2. 双击冲突文件进入 **三方合并编辑器**。
+
+![三方合并编辑器](./images/three-way-merge.png)
 3. 使用逐块按钮或底部操作栏（**Accept Left** / **Accept Right**）解决冲突。
 4. 使用工具栏的 **▲ / ▼** 按钮在冲突之间导航。
 5. 点击 **Apply** 保存、暂存并打开合并结果。

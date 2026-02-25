@@ -38,10 +38,17 @@ JetBrains-style Git visualization for VS Code — Git Graph, Diff viewer, and 3-
 
 Open the bottom panel and switch to the **Git Brains** tab to view the commit graph, branch tree, and commit details.
 
+![Git Graph](./images/git-graph.png)
+
 ### Merge Editor
 
 1. When merge conflicts occur, click the merge icon in the **Source Control** panel title bar to open the **Conflict List**.
+
+![Conflict List](./images/conflicts-list.png)
+
 2. Double-click a conflicting file to open the **3-Way Merge Editor**.
+
+![3-Way Merge Editor](./images/three-way-merge.png)
 3. Use per-block buttons or the bottom action bar (**Accept Left** / **Accept Right**) to resolve conflicts.
 4. Navigate between conflicts using the **▲ / ▼** buttons in the toolbar.
 5. Click **Apply** to save, stage, and open the merged result.
