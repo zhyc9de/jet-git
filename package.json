@@ -1,0 +1,116 @@
+{
+  "name": "git-brains",
+  "displayName": "Git Brains",
+  "description": "JetBrains-like Git visualization for VS Code",
+  "version": "0.0.1",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "SCM Providers"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "panel": [
+        {
+          "id": "git-brains-panel",
+          "title": "Git Brains",
+          "icon": "$(git-branch)"
+        }
+      ]
+    },
+    "views": {
+      "git-brains-panel": [
+        {
+          "type": "webview",
+          "id": "git-brains.gitLog",
+          "name": "Git Log"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "git-brains.refreshLog",
+        "title": "Refresh Git Log",
+        "icon": "$(refresh)",
+        "category": "Git Brains"
+      },
+      {
+        "command": "git-brains.openMergeEditor",
+        "title": "Open Merge Editor",
+        "category": "Git Brains"
+      },
+      {
+        "command": "git-brains.openConflicts",
+        "title": "Conflicts",
+        "icon": "$(git-merge)",
+        "category": "Git Brains"
+      },
+      {
+        "command": "git-brains.openMergeEditorFromSCM",
+        "title": "Open in Git Brains Merge Editor",
+        "icon": "$(git-merge)",
+        "category": "Git Brains"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "git-brains.refreshLog",
+          "when": "view == git-brains.gitLog",
+          "group": "navigation"
+        }
+      ],
+      "scm/title": [
+        {
+          "command": "git-brains.openConflicts",
+          "when": "scmProvider == git",
+          "group": "navigation"
+        }
+      ],
+      "scm/resourceState/context": [
+        {
+          "command": "git-brains.openMergeEditorFromSCM",
+          "when": "scmProvider == git && scmResourceGroup == merge",
+          "group": "inline@10"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run package",
+    "compile": "pnpm run check-types && pnpm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "watch:webview": "cd webview && pnpm run watch",
+    "package": "pnpm run check-types && pnpm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "biome check src webview/src",
+    "test": "vscode-test",
+    "build:web": "cd webview && pnpm run build",
+    "build": "pnpm run compile && pnpm run build:web",
+    "dev:web": "cd webview && pnpm run dev"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.15",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.109.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "esbuild": "^0.27.2",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@10.18.2+sha512.9fb969fa749b3ade6035e0f109f0b8a60b5d08a1a87fdf72e337da90dcc93336e2280ca4e44f2358a649b83c17959e9993e777c2080879f3801e6f0d999ad3dd",
+  "dependencies": {
+    "node-diff3": "^3.2.0"
+  }
+}

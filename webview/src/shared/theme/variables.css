@@ -1,0 +1,105 @@
+:root {
+  --app-bg: var(--vscode-editor-background, #1e1e1e);
+  --app-fg: var(--vscode-editor-foreground, #cccccc);
+  --border: var(--vscode-panel-border, #444);
+  --hover-bg: var(--vscode-list-hoverBackground, #2a2d2e);
+  --selected-bg: var(--vscode-list-activeSelectionBackground, #04395e);
+  --selected-fg: var(--vscode-list-activeSelectionForeground, #fff);
+  --button-bg: var(--vscode-button-background, #0e639c);
+  --button-fg: var(--vscode-button-foreground, #fff);
+  --button-hover-bg: var(--vscode-button-hoverBackground, #1177bb);
+  --font-family: var(
+    --vscode-font-family,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif
+  );
+  --font-size: var(--vscode-font-size, 13px);
+  --badge-bg: var(--vscode-badge-background, #4d4d4d);
+  --badge-fg: var(--vscode-badge-foreground, #fff);
+  --input-bg: var(--vscode-input-background, #3c3c3c);
+  --input-fg: var(--vscode-input-foreground, #ccc);
+  --input-border: var(--vscode-input-border, #3c3c3c);
+  --description-fg: var(--vscode-descriptionForeground, #999);
+  --error-fg: var(--vscode-errorForeground, #f48771);
+  --editor-font: var(--vscode-editor-font-family, "Menlo", monospace);
+  --editor-font-size: var(--vscode-editor-font-size, 12px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: var(--app-bg);
+  color: var(--app-fg);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+button {
+  cursor: pointer;
+  background: var(--button-bg);
+  color: var(--button-fg);
+  border: none;
+  padding: 6px 14px;
+  border-radius: 2px;
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
+
+button:hover:not(:disabled) {
+  background: var(--button-hover-bg);
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.selectable-row {
+  cursor: pointer;
+}
+.selectable-row:hover {
+  background: var(--hover-bg);
+}
+.selectable-row.selected {
+  background: var(--selected-bg);
+}
+.selectable-row.selected:hover {
+  background: var(--selected-bg);
+}
+
+.graph-line-path {
+  transition: all 0.1s ease-in-out;
+}
+
+/* 仅交互线（可折叠序列）启用 CSS hover */
+.graph-line-group.interactive:hover .graph-line-path {
+  stroke: var(--app-fg);
+  stroke-width: 2.2px;
+  opacity: 1;
+  transition: all 0.1s ease-in-out;
+}
+
+/* 序列线：禁用 CSS hover，用 React 控制 */
+.graph-sequence-line:hover .graph-line-path {
+  stroke: unset;
+  stroke-width: unset;
+  opacity: unset;
+}
+
+/* 序列整体高亮 */
+.graph-sequence-line.sequence-hover .graph-line-path {
+  stroke: var(--app-fg);
+  stroke-width: 2.2px;
+  opacity: 1;
+  transition: all 0.1s ease-in-out;
+}
