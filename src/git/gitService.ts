@@ -263,6 +263,7 @@ export class GitService {
   async getCommitFiles(hash: string): Promise<DiffFile[]> {
     const output = await this.execGit([
       "diff-tree",
+      "--root",
       "--no-commit-id",
       "-r",
       "--name-status",

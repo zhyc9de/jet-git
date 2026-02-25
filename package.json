@@ -1,10 +1,15 @@
 {
   "name": "git-brains",
   "displayName": "Git Brains",
+  "publisher": "zhycde",
   "description": "JetBrains-like Git visualization for VS Code",
   "version": "0.0.1",
   "license": "MIT",
   "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhyc9de/git-brains"
+  },
   "engines": {
     "vscode": "^1.109.0"
   },
