@@ -27,10 +27,10 @@ JetBrains 风格的 Git 可视化工具 —— 在一个扩展中提供 Git Grap
 ## 📦 安装
 
 1. 在 VS Code 扩展中搜索 **"Git Brains"** 并点击 **安装**。
-2. 或从 [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/) 安装。
+2. 或从 [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=zhycde.git-brains) 安装。
 
 > **注意**
-> 需要 VS Code >= 1.109.0，且 Git 已安装并在 PATH 中。
+> 需要 Git 已安装并在 PATH 中。Windows 尚未充分测试。
 
 ## 🤯 使用
 
@@ -53,10 +53,15 @@ JetBrains 风格的 Git 可视化工具 —— 在一个扩展中提供 Git Grap
 4. 使用工具栏的 **▲ / ▼** 按钮在冲突之间导航。
 5. 点击 **Apply** 保存、暂存并打开合并结果。
 
+## TODO
+
+- [ ] 三方合并编辑器：Result 列暂不支持编辑（后续支持）
+- [ ] 适配不同的 VS Code 主题
+
 ## ⌨️ 本地开发
 
 ```bash
-git clone https://github.com/user/git-brains.git
+git clone https://github.com/zhyc9de/git-brains.git
 cd git-brains
 pnpm install
 cd webview && pnpm install && cd ..
@@ -75,5 +80,5 @@ pnpm run build       # 完整生产构建
 
 <!-- LINK GROUP -->
 
-[github-license-link]: https://github.com/user/git-brains/blob/main/LICENSE
+[github-license-link]: https://github.com/zhyc9de/git-brains/blob/main/LICENSE
 [github-license-shield]: https://img.shields.io/github/license/user/git-brains?color=white&labelColor=black&style=flat-square

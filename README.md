@@ -27,10 +27,10 @@ JetBrains-style Git visualization for VS Code — Git Graph, Diff viewer, and 3-
 ## 📦 Installation
 
 1. Search for **"Git Brains"** in VS Code Extensions and click **Install**.
-2. Or install from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).
+2. Or install from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=zhycde.git-brains).
 
 > **Note**
-> Requires VS Code >= 1.109.0 and Git installed in your PATH.
+> Requires Git installed in your PATH. Windows is not fully tested yet.
 
 ## 🤯 Usage
 
@@ -53,10 +53,15 @@ Open the bottom panel and switch to the **Git Brains** tab to view the commit gr
 4. Navigate between conflicts using the **▲ / ▼** buttons in the toolbar.
 5. Click **Apply** to save, stage, and open the merged result.
 
+## TODO
+
+- [ ] 3-Way Merge Editor: the Result column is read-only for now (editing support coming soon)
+- [ ] Adapt to different VS Code color themes
+
 ## ⌨️ Local Development
 
 ```bash
-git clone https://github.com/user/git-brains.git
+git clone https://github.com/zhyc9de/git-brains.git
 cd git-brains
 pnpm install
 cd webview && pnpm install && cd ..
@@ -75,5 +80,5 @@ This project is [MIT](./LICENSE) licensed.
 
 <!-- LINK GROUP -->
 
-[github-license-link]: https://github.com/user/git-brains/blob/main/LICENSE
+[github-license-link]: https://github.com/zhyc9de/git-brains/blob/main/LICENSE
 [github-license-shield]: https://img.shields.io/github/license/user/git-brains?color=white&labelColor=black&style=flat-square

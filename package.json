@@ -3,7 +3,7 @@
   "displayName": "Git Brains",
   "publisher": "zhycde",
   "description": "JetBrains-like Git visualization for VS Code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "icon": "images/icon.png",
   "repository": {
@@ -11,7 +11,7 @@
     "url": "https://github.com/zhyc9de/git-brains"
   },
   "engines": {
-    "vscode": "^1.109.0"
+    "vscode": "^1.85.0"
   },
   "categories": [
     "SCM Providers"

@@ -2,6 +2,16 @@
 
 All notable changes to Git Brains will be documented in this file.
 
+## [0.0.2] - 2026-02-25
+
+### Fixed
+
+- Show all changed files for root commit.
+
+### Changed
+
+- Remove VS Code version restriction.
+
 ## [0.0.1] - 2026-02-25
 
 ### Added
