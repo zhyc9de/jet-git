@@ -91,11 +91,11 @@ function getShikiSpans(
   // Shiki v3 `codeToTokens` returns Token[][], older shape may include `{ tokens }`.
   const lines = Array.isArray(result)
     ? result
-    : (
+    : ((
         result as unknown as {
           tokens?: Array<Array<{ content: string; color?: string }>>;
         }
-      ).tokens ?? [];
+      ).tokens ?? []);
   const firstLine = lines[0] ?? [];
 
   let offset = 0;

@@ -556,9 +556,10 @@ function BranchItem({
       style={{
         padding: `4px 8px 4px ${20 + depth * 12}px`,
         fontWeight: isCurrent || isFiltered ? 600 : 400,
-        background: isCurrent && !isSelected
-          ? "var(--list-hoverBackground, rgba(0,0,0,0.04))"
-          : undefined,
+        background:
+          isCurrent && !isSelected
+            ? "var(--list-hoverBackground, rgba(0,0,0,0.04))"
+            : undefined,
         color: isSelected ? "var(--selected-fg)" : "inherit",
         outline: isFiltered ? "1px solid var(--focus-border, #007fd4)" : "none",
         display: "flex",

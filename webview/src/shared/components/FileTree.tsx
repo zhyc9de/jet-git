@@ -290,7 +290,7 @@ function FileTreeNodeView({
         onClick={(e) => node.file && onFileClick(e, node.file)}
         onDoubleClick={
           onFileDoubleClick
-            ? () => node.file && onFileDoubleClick(node.file!)
+            ? () => node.file && onFileDoubleClick(node.file)
             : undefined
         }
         renderExtraColumns={renderExtraColumns}
