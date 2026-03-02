@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to Git Brains will be documented in this file.
+All notable changes to JetGit will be documented in this file.
 
 ## [0.0.2] - 2026-02-25
 

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<h1>Git Brains</h1>
+<h1>JetGit</h1>
 
 JetBrains-style Git visualization for VS Code — Git Graph, Diff viewer, and 3-Way Merge Editor in one extension.
 
@@ -26,7 +26,7 @@ JetBrains-style Git visualization for VS Code — Git Graph, Diff viewer, and 3-
 
 ## 📦 Installation
 
-1. Search for **"Git Brains"** in VS Code Extensions and click **Install**.
+1. Search for **"JetGit"** in VS Code Extensions and click **Install**.
 2. Or install from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=zhycde.git-brains).
 
 > **Note**
@@ -36,7 +36,7 @@ JetBrains-style Git visualization for VS Code — Git Graph, Diff viewer, and 3-
 
 ### Git Graph
 
-Open the bottom panel and switch to the **Git Brains** tab to view the commit graph, branch tree, and commit details.
+Open the bottom panel and switch to the **JetGit** tab to view the commit graph, branch tree, and commit details.
 
 ![Git Graph](./images/git-graph.png)
 

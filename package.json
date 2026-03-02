@@ -1,14 +1,14 @@
 {
   "name": "git-brains",
-  "displayName": "Git Brains",
+  "displayName": "Just Jet Git",
   "publisher": "zhycde",
   "description": "JetBrains-like Git visualization for VS Code",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "icon": "images/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhyc9de/git-brains"
+    "url": "https://github.com/zhyc9de/jet-git"
   },
   "engines": {
     "vscode": "^1.85.0"
@@ -22,7 +22,7 @@
       "panel": [
         {
           "id": "git-brains-panel",
-          "title": "Git Brains",
+          "title": "JetGit",
           "icon": "$(git-branch)"
         }
       ]
@@ -41,24 +41,24 @@
         "command": "git-brains.refreshLog",
         "title": "Refresh Git Log",
         "icon": "$(refresh)",
-        "category": "Git Brains"
+        "category": "JetGit"
       },
       {
         "command": "git-brains.openMergeEditor",
         "title": "Open Merge Editor",
-        "category": "Git Brains"
+        "category": "JetGit"
       },
       {
         "command": "git-brains.openConflicts",
         "title": "Conflicts",
         "icon": "$(git-merge)",
-        "category": "Git Brains"
+        "category": "JetGit"
       },
       {
         "command": "git-brains.openMergeEditorFromSCM",
-        "title": "Open in Git Brains Merge Editor",
+        "title": "Open in JetGit Merge Editor",
         "icon": "$(git-merge)",
-        "category": "Git Brains"
+        "category": "JetGit"
       }
     ],
     "menus": {

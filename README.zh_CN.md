@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<h1>Git Brains</h1>
+<h1>JetGit</h1>
 
 JetBrains 风格的 Git 可视化工具 —— 在一个扩展中提供 Git Graph、Diff 查看器和三方合并编辑器。
 
@@ -26,7 +26,7 @@ JetBrains 风格的 Git 可视化工具 —— 在一个扩展中提供 Git Grap
 
 ## 📦 安装
 
-1. 在 VS Code 扩展中搜索 **"Git Brains"** 并点击 **安装**。
+1. 在 VS Code 扩展中搜索 **"JetGit"** 并点击 **安装**。
 2. 或从 [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=zhycde.git-brains) 安装。
 
 > **注意**
@@ -36,7 +36,7 @@ JetBrains 风格的 Git 可视化工具 —— 在一个扩展中提供 Git Grap
 
 ### Git Graph
 
-打开底部面板，切换到 **Git Brains** 标签页即可查看提交图、分支树和提交详情。
+打开底部面板，切换到 **JetGit** 标签页即可查看提交图、分支树和提交详情。
 
 ![Git Graph](./images/git-graph.png)
 
