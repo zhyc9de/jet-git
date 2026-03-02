@@ -3,7 +3,7 @@
   "displayName": "Just Jet Git",
   "publisher": "zhycde",
   "description": "JetBrains-like Git visualization for VS Code",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "icon": "images/icon.png",
   "repository": {
